@@ -1,0 +1,27 @@
+Git tips when working with others on the same branch:
+
+1) Always commit local before pulling in or merging any changes -- this gives the opportunity to back out if things go awry.
+
+2) If you are not sure how the changes will affect your code, stash your current work (git stash) and then pull latest.
+After you pull latest, un stash the changes (git stash pop) and resolve any issues/errors.
+
+3) gitk is your friend. If you ever lose track of where something is and you need a visual, this will be your tool.
+
+4) When working with multiple colleagues, sometimes additional feature branches may be useful. With feature branches
+you can use a very handy feature (git cherry-pick {sha# here}) which allows you to pull only changes from that point
+in time which can minimize the integration pains from huge branch merges. Feature branching also allows the perk of
+fewer conflicts from team members as you continue to develop a particular feature in the same code base.
+
+The Wilhelm workflow:
+Develop a feature
+Commit the feature locally
+git pull --rebase
+
+This method allows me to handle the rebase step by step and use my merge / diff tools to handle the conflicts as I go
+or if things get too dicey I can always back out.
+
+Of course this is workflow specific and can vary depending on how your organization handles code transitions. It is
+not all that uncommon to fork repositories and submit pull requests but that is an entirely different ball game than
+what is presented here. The aforementioned workflow is simply for developers working off the same branch in parallel.
+
+Now that you know the Wilhelm proven method, nothing can stop you from becoming a master of the versioning system.
