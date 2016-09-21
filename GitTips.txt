@@ -8,7 +8,7 @@ After you pull latest, un stash the changes (git stash pop) and resolve any issu
 3) gitk is your friend. If you ever lose track of where something is and you need a visual, this will be your tool.
 
 4) When working with multiple colleagues, sometimes additional feature branches may be useful. With feature branches
-you can use a very handy feature (git cherry-pick {sha# here}) which allows you to pull only changes from that point
+you can use a very handy command (git cherry-pick {sha# here}) which allows you to pull only changes from that point
 in time which can minimize the integration pains from huge branch merges. Feature branching also allows the perk of
 fewer conflicts from team members as you continue to develop a particular feature in the same code base.
 
