@@ -1,2 +1,7 @@
 Nuget package -- Guide to the re-usable future.
 
+If you're seeing "Unable to resolve dependencies. 'SomePackage SomeVersion' is not compatible with 'SomeInstallingPackage SomeVersion' constraint: SomePackage (>= SomeVersion)
+then the package you are trying to install probably has it's dependency versions specified incorrectly. For example it could be something along the lines of:
+<dependency id="Microsoft.AspNet.WebApi" version="(5.2.3,)" />
+instead of:
+<dependency id="Microsoft.AspNet.WebApi" version="[5.2.3,)" />
