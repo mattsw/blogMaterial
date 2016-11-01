@@ -1,0 +1,16 @@
+Git Tips round two:
+
+Working with forks inside of your organization.
+
+If your organization has you creating a fork for each feature / task you work on then this guide may help you. Having worked with my organization for years,
+the move to GitHub caused a few hiccups to my daily routine. Nonetheless I found some valuable things that you can do to help smooth it.
+
+When you are developing on a fork, and the main branch / stream is updated before you manage to sneak your stuff in, you could find yourself with a little
+bit of confusion. To get around this, you will have to pull down the changes to your fork / branch locally, resolve the merge conflicts, then push it back up
+and submit a pull request.
+
+A few tricks that you might find pretty easy are:
+1. Set the origin to the company repository (E.G. git remote set-url origin https://github.com/{your org here}/{your project here})
+2. Set the push origin to your local fork (E.G. git remote set-url --push origin https://github.com/{your username here}/{your project here})
+
+After doing the above tricks, it should be a little less troublesome to get things moving through the pipeline.
