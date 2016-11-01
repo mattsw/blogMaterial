@@ -1,4 +1,4 @@
-Git Tips round two:
+Git Tips round two: (Keep in mind this guide is mostly for command line nerds)
 
 Working with forks inside of your organization.
 
